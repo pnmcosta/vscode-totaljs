@@ -10,7 +10,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pnmcosta/vscode-totaljs"
-	},
+    },
+    "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.20.0"
     },
