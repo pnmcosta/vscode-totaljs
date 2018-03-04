@@ -1,0 +1,93 @@
+{
+    "name": "vscode-totaljs",
+    "displayName": "Total.js Language Support",
+    "description": "Adds Total.js View Engine, Config and Log file Language Support to Visual Studio Code",
+    "version": "0.1.0",
+    "publisher": "pnmcosta",
+    "bugs": {
+		"url": "https://github.com/pnmcosta/vscode-totaljs/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pnmcosta/vscode-totaljs"
+	},
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "totaljs",
+                "aliases": [
+                    "Total.js View Engine",
+                    "totaljs"
+                ],
+                "extensions": [
+                    ".html",
+                    ".htm",
+                    ".shtml",
+                    ".xhtml",
+                    ".phtml",
+                    ".inc",
+                    ".tmpl",
+                    ".tpl",
+                    ".ctp"
+                ],
+                "configuration": "./totaljs-configuration.json"
+            },
+            {
+                "id": "totaljs-config",
+                "aliases": [
+                    "Total.js Config",
+                    "totaljs-config"
+                ],
+                "filenames": [
+                    "config",
+                    "config-debug",
+                    "config-release",
+                    "config-test"
+                ],
+                "extensions": [
+                    ".resource",
+                    ".versions",
+                    ".dependencies",
+                    ".package"
+                ],
+                "configuration": "./totaljs-config-configuration.json"
+            },
+            {
+                "id": "totaljs-log",
+                "aliases": [
+                    "Total.js Log File",
+                    "totaljs-log"
+                ],
+                "extensions": [
+                    ".log"
+                ],
+                "filenamePatterns": [
+                    "*.*-log"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "totaljs",
+                "scopeName": "text.totaljs-html",
+                "path": "./syntaxes/totaljs-html.tmLanguage"
+            },
+            {
+                "language": "totaljs-config",
+                "scopeName": "text.totaljs-config",
+                "path": "./syntaxes/totaljs-config.tmLanguage"
+            },
+            {
+                "language": "totaljs-log",
+                "scopeName": "text.totaljs-log",
+                "path": "./syntaxes/totaljs-log.tmLanguage"
+            }
+        ]
+    }
+}
