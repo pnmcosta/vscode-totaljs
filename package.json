@@ -18,10 +18,13 @@
     "categories": [
         "Languages"
     ],
+    "extensionDependencies": [
+        "vscode.html"
+    ],
     "contributes": {
         "languages": [
             {
-                "id": "totaljs",
+                "id": "html",
                 "aliases": [
                     "Total.js View Engine",
                     "totaljs"
@@ -75,7 +78,7 @@
         ],
         "grammars": [
             {
-                "language": "totaljs",
+                "language": "html",
                 "scopeName": "text.totaljs-html",
                 "path": "./syntaxes/totaljs-html.tmLanguage"
             },
