@@ -2,7 +2,7 @@
     "name": "vscode-totaljs",
     "displayName": "Total.js Language Support",
     "description": "Adds Total.js View Engine, Config and Log file Language Support to Visual Studio Code",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "pnmcosta",
     "bugs": {
         "url": "https://github.com/pnmcosta/vscode-totaljs/issues"
