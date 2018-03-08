@@ -74,6 +74,16 @@
                 "filenamePatterns": [
                     "*.*-log"
                 ]
+            },
+            {
+                "id": "scss",
+                "aliases": [
+                    "Total.js CSS",
+                    "totaljs-css"
+                ],
+                "filenamePatterns": [
+                    "**/public/**/*.css"
+                ]
             }
         ],
         "grammars": [
